@@ -1,9 +1,10 @@
-export default function Activity() {
-  return (<div>
-    <h2>Go for a walk</h2>
-    <p>Time: 1 hour</p>
-    <p>People: 1</p>
-    <p>Description: Go somewhere random and walk</p>
-  </div>
+export default function Activity({title, time, people, description}) {
+  return (
+    <div className="card">
+      <h3>{title}</h3>
+      <p>Time: {time}</p>
+      <p>People: {people}</p>
+      <p>Description: {description}</p>
+    </div>
   );
 }
