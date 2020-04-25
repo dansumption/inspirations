@@ -17,7 +17,6 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <p>Navbar here</p>
       <header className={styles.header}>
         {home ? (
           <>
@@ -25,16 +24,11 @@ export default function Layout({ children, home }) {
           </>
         ) : (
           <>
-            <Link href="/">
-              <a>
-                HOME
-              </a>
-            </Link>
-            <h2 className={utilStyles.headingLg}>
+            <h1 className={utilStyles.heading2Xl}>
               <Link href="/">
                 <a className={utilStyles.colorInherit}>{siteTitle}</a>
               </Link>
-            </h2>
+            </h1>
           </>
         )}
       </header>

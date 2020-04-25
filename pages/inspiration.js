@@ -2,20 +2,15 @@ import Link from 'next/link';
 import Head from 'next/head';
 import Layout from '../components/layout';
 
-
+import Activity from '../components/activity'
 
 export default function Inspiration() {
   return (
     <Layout>
       <Head>
-        <title>try this for inspiration</title>
+        <title>inspirations: something to do</title>
       </Head>
-      <h1>try this for inspiration</h1>
-      <h2>
-        <Link href="/">
-          <a>Back to home</a>
-        </Link>
-      </h2>
+      <Activity/>
     </Layout>
   );
 }
