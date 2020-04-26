@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import PageWrapper from '../../components/pageWrapper';
 import Activity from '../../components/activity';
-import { getAllPostIds, getPostData } from '../../lib/posts';
+import { getAllPostIds, getPostData } from '../../lib/readActivities';
 
 export default function Inspiration({ postData }) {
   return (

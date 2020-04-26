@@ -2,7 +2,7 @@ import Head from 'next/head';
 import PageWrapper, { siteTitle } from '../components/pageWrapper';
 import Activity from '../components/activity';
 import utilStyles from '../styles/utils.module.css';
-import { getSortedPostsData } from '../lib/posts';
+import { getSortedPostsData } from '../lib/readActivities';
 
 
 export default function Home({ allPostsData }) {
