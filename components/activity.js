@@ -1,7 +1,7 @@
-export default function Activity({title, time, people, description}) {
+export default function Activity({ title, time, people, description }) {
   return (
     <div className="card">
-      <h3>{title}</h3>
+      <h2>{title}</h2>
       <p>Time: {time}</p>
       <p>People: {people}</p>
       <p>Description: {description}</p>
