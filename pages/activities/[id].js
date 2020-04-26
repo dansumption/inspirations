@@ -1,11 +1,11 @@
 import Head from 'next/head';
-import Layout from '../../components/layout';
+import PageWrapper from '../../components/pageWrapper';
 import Activity from '../../components/activity';
 import { getAllPostIds, getPostData } from '../../lib/posts';
 
 export default function Inspiration({ postData }) {
   return (
-    <Layout>
+    <PageWrapper>
       <Head>
         <title>inspirations: something to do</title>
       </Head>
@@ -17,7 +17,7 @@ export default function Inspiration({ postData }) {
           description={postData.description}
         />
       </div>
-    </Layout>
+    </PageWrapper>
   );
 }
 

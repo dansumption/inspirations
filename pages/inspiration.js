@@ -1,12 +1,13 @@
 import Link from 'next/link';
 import Head from 'next/head';
-import Layout from '../components/layout';
+import PageWrapper from '../components/pageWrapper';
 
 import Activity from '../components/activity';
+import PageWrapper from '../components/pageWrapper';
 
 export default function Inspiration() {
   return (
-    <Layout>
+    <PageWrapper>
       <Head>
         <title>inspirations: something to do</title>
       </Head>
@@ -36,6 +37,6 @@ export default function Inspiration() {
           description="Dig a hole, plant a tree, water the tree"
         />
       </div>
-    </Layout>
+    </PageWrapper>
   );
 }

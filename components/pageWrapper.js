@@ -1,11 +1,11 @@
 import Head from 'next/head';
-import styles from './layout.module.css';
+import styles from './pageWrapper.module.css';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
 
 export const siteTitle = 'inspirations';
 
-export default function Layout({ children, home }) {
+export default function PageWrapper({ children, home }) {
   return (
     <div className={styles.container}>
       <Head>

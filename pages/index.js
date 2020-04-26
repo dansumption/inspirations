@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import Layout, { siteTitle } from '../components/layout';
+import PageWrapper, { siteTitle } from '../components/pageWrapper';
 import Activity from '../components/activity';
 import utilStyles from '../styles/utils.module.css';
 import { getSortedPostsData } from '../lib/posts';
@@ -7,7 +7,7 @@ import { getSortedPostsData } from '../lib/posts';
 
 export default function Home({ allPostsData }) {
                  return (
-                   <Layout home>
+                   <PageWrapper home>
                      <Head>
                        <title>{siteTitle}</title>
                      </Head>
@@ -21,7 +21,7 @@ export default function Home({ allPostsData }) {
                          ))}
                        </div>
                      </section>
-                   </Layout>
+                   </PageWrapper>
                  );
                }
 
