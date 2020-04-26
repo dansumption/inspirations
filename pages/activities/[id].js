@@ -14,7 +14,7 @@ export default function Inspiration({ postData }) {
           title={postData.title}
           time={postData.time}
           people={postData.people}
-          description={postData.description}
+          content={postData.content}
         />
       </div>
     </PageWrapper>
