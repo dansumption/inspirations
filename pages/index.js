@@ -3,6 +3,7 @@ import PageWrapper, { siteTitle } from '../components/pageWrapper';
 import Activity from '../components/activity';
 import utilStyles from '../styles/utils.module.css';
 import { getSortedPostsData } from '../lib/readActivities';
+import Link from 'next/link';
 
 export default function Home({ allPostsData }) {
   return (
@@ -11,10 +12,13 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section>
-        <h2 className={utilStyles.headingLg}>activities</h2>
         <div className="grid">
           {allPostsData.map(({ id, time, people, title }) => (
-            <Activity key={id} title={title} time={time} people={people} />
+            <Link key={id} href={'/activities/' + id}>
+              <a>
+                <Activity key={id} title={title} time={time} people={people} />
+              </a>
+            </Link>
           ))}
         </div>
       </section>
